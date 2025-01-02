@@ -1,0 +1,271 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.hero-section {
+    position: relative;
+    background: url('images/bgheader.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* Optional for parallax effect */
+    width: 100%;
+    min-height: 50vh; /* Ensures minimum height on smaller screens */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 2rem; /* Ensures some spacing */
+}
+
+.hero-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2; /* Content above the overlay */
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        background-attachment: scroll; /* Fix for mobile screens */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.image-container {
+    flex: 1;
+    min-width: 100px; /* Prevents shrinking too much */
+}
+
+.text-container {
+    flex: 1;
+    min-width: 150px;
+    text-align: center; /* Center-align text by default */
+}
+
+@media (min-width: 768px) {
+    .text-container {
+        text-align: left; /* Align text to the left on medium+ screens */
+        margin-left: 5rem; /* Add space between image and text */
+    }
+}
+
+/* Quotes Section Styles */
+.quotes-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fce4ec; /* Light pink background */
+}
+
+.quotes-section .quote {
+    position: relative;
+    background-color: #b05b6f; /* Dark pink bubble color */
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px; /* Ensures all quote boxes are the same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.quotes-section .quote p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.quotes-section .quote p:last-child {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.quotes-section .quote em {
+    font-style: italic;
+}
+
+/* Optional: Responsive Design */
+@media (max-width: 768px) {
+    .quotes-section .quote {
+        padding: 20px;
+    }
+
+    .quotes-section .quote p {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* bEAUTY tIPS pART */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+}
+.slide-content{
+    padding: 45px 20px;
+    margin: 0 40px;
+    background-color: #d8bfbf;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.card{
+    border-radius: 25px;
+    background-color: #FFE2E2;
+    
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #A04963;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #A04963;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFE2E2;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #A04963;
+    padding: 3px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #FFE7E7;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #A04963;
+}
+.description{
+    font-size: 14px;
+    color: #A04963;
+    text-align: center;
+}
+.button{
+    border: none;
+    font-size: 16px;
+    color: #FFE7E7;
+    padding: 8px 16px;
+    background-color: #A04963;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    background: #7f344a;
+}
+
+.swiper-navBtn{
+    color: #A04963;
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover{
+    color: #7f344a;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 40px;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-pagination-bullet{
+    background-color: #A04963;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: #7f344a;
+}
+
+@media screen and (max-width: 768px) {
+    .slide-content{
+        margin: 0 10px;
+    }
+    .swiper-navBtn{
+        display: none;
+    }
+}

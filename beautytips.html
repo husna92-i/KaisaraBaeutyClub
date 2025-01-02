@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaisara Beauty Club - Beauty Tips</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="beautyStyles.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Logo as Homepage Link -->
+            <a class="navbar-brand" href="beautytips.html">
+                <img src="images/LOGO.png" alt="Kaisara Beauty Club Logo" style="height: 80px; max-height: 100px; width: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Beauty Tips</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Our Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-primary" href="#">Booking</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center text-white py-5">
+        <div class="container">
+            <h1>Glow with Confidence: Expert Beauty Tips Just for You!</h1>
+            <p>Discover timeless tips and tricks to enhance your natural beauty.</p>
+        </div>
+    </section>    
+
+    <!-- Hydrate Section -->
+    <section class="container my-5 d-flex align-items-center flex-wrap">
+        <!-- Image Section -->
+        <div class="image-container">
+            <img src="images/hydratedpic1.jpg" class="img-fluid rounded" alt="Hydrate Skin" style="width: 100%">
+        </div>
+    
+        <!-- Text Section -->
+        <div class="text-container ms-md-5 mt-4 mt-md-0">
+            <h2>HYDRATE FOR GLOWING SKIN!</h2>
+            <p>Drinking at least 2 litres of water a day can improve your skin's texture and radiance.</p>
+            <button class="button" data-url="https://foxtale.in/blogs/news/8-tips-to-hydrate-your-skin-and-get-glowing-skin?srsltid=AfmBOooP43c0d42iFj_rAVdiWL264baLjwWabJL1wqMGufWEbuAq6_nA">Read More</button>
+        </div>
+    </section>
+    
+    
+
+    <!-- Quotes Section -->
+    <section class="quotes-section text-center py-5">
+        <div class="container">
+            <div class="quote" style="position: relative; background-color: #b05b6f; color: white; padding: 30px; border-radius: 10px; margin-bottom: 20px;">
+                <p style="font-size: 1.5rem; line-height: 1.8;">“Beauty isn't about what you lack, it's about <em>embracing the richness within</em>.”</p>
+                <p style="font-weight: bold; margin-top: 10px;">— Selena Gomez</p>
+            </div>
+            <div class="quote" style="position: relative; background-color: #b05b6f; color: white; padding: 30px; border-radius: 10px;">
+                <p style="font-size: 1.5rem; line-height: 1.8;">“Happiness is the secret to all beauty.”</p>
+                <p style="font-weight: bold; margin-top: 10px;">— Christian Dior</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Beauty Tips Cards Section -->
+    <section class="container my-5 text-center">
+        <h3>Our Featured Beauty Tips</h3>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="images/hydratedpic1.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">GLOW WITH HYDRATION!</h2>
+                            <p class="description">Drinking at least 2 litres of water a day can improve your skin’s texture and radiance.</p>
+
+                            <button class="button" data-url="https://foxtale.in/blogs/news/8-tips-to-hydrate-your-skin-and-get-glowing-skin?srsltid=AfmBOooP43c0d42iFj_rAVdiWL264baLjwWabJL1wqMGufWEbuAq6_nA">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="images/nailcare.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">NAIL CARE SECRET</h2>
+                            <p class="description">Discover top tips for strong and healthy nails.</p>
+
+                            <button class="button" data-url="https://www.aad.org/public/everyday-care/nail-care-secrets/basics/healthy-nail-tips">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="images/skincare.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">5 MIN SKINCARE</h2>
+                            <p class="description">Quick and easy skincare tips for a glowing face.</p>
+
+                            <button class="button" data-url="https://dridriss.com/blogs/news/morning-skincare-routine-dermatologists-5-minute-simple-effective-regimen?srsltid=AfmBOopiTOXT8Q49RKaZOK03tqr4KrBEb2-Iam6LBHW6Od3x29kQeSZY">Read More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="images/softskin.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">SOFT SKIN, NO FUSS</h2>
+                            <p class="description">Achieve irresistibly smooth and radiant skin without the hassle.</p>
+
+                            <button class="button" data-url="https://hereforvanity.com/body-care-routine-for-glowing-skin/">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Kaisara BeautyClub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+    <!-- Swiper JS -->
+    <script src="swiper-bundle.min.js"></script>
+
+    <script src="beautyScript.js"></script>
+
+</body>
+</html>
