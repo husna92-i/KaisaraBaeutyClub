@@ -22,18 +22,21 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
+    margin:0;
 }
 
 header {
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: transparent;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 100;
+    height: 80px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
 }
 
-.logo-image {
+.logo img {
     height: 50px; 
     width: auto; 
     max-width: 100%;
@@ -48,9 +51,18 @@ nav {
     margin: 0 auto;
 }
 
+nav-background {
+    background-color: #f0f0f0; /* Light gray background for the nav links */
+    padding: 10px 20px ; /* Padding around the nav links */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .nav-links {
     display: flex;
     list-style: none;
+    margin: 0; 
+    padding: 0;
 }
 
 .nav-links li {
@@ -59,13 +71,13 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: #4A4A4A;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: var(--secondary-color);
+    color: rgb(170, 103, 131);
 }
 
 .about-hero {
@@ -117,7 +129,7 @@ nav {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    flex: 1 1 300px; 
+    flex: 1 1 45%;
     max-width: 400px;
     display: flex;
     flex-direction: column;
@@ -169,34 +181,41 @@ nav {
     border-bottom: none;
 }
 
+@media screen and (min-width: 768px) {
+    .about-content {
+        flex-direction: row; /* Ensure items are in a row on larger screens */
+    }
+
+    .founders-section,
+    .mission-section {
+        flex: 1 1 45%; /* Two boxes at the top */
+    }
+
+    .islamic-values {
+        flex: 1 1 100%; /* One box at the bottom */
+        margin-top: 20px; /* Add some space above the bottom box */
+    }
+}
+
 @media screen and (max-width: 768px) {
     .about-content {
         flex-direction: column;
     }
 
-    .about-hero h1 {
-        font-size: 2rem;
-    }
-
-    .about-hero p {
-        font-size: 1rem;
-    }
-
     .founders-section,
-    .mission-section,
+    .mission-section
     .islamic-values {
         margin-bottom: 20px;
+        flex: 1 1 100%;
     }
 }
 
 footer {
     background-color: var(--primary-color);
     color: white;
-    padding: 85px 5%;
+    padding:70px 5%;
     text-align: center;
     position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%; 
     z-index: 100;
     height: 60px;
@@ -209,17 +228,20 @@ footer {
 .footer-content {
     font-size: 12px; 
     text-align: center; 
-    white-space: nowrap; 
+    white-space: normal;
     overflow: hidden; 
     text-overflow: ellipsis;
 }
 
 .social-links {
-    margin: 20px 0;
+    margin: 5px 0;
 }
 
 .social-icon {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 5px;
+}
+.about-page {
+    padding-bottom: 60px;
 }
