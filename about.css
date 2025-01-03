@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 :root {
     --primary-color: #4A4A4A;
     --secondary-color:rgb(170, 103, 131);
@@ -9,6 +12,7 @@
 .about-page {
     background-color: #f9f7fc;
     color: var(--text-color);
+    padding-bottom: 60px; /* Adjust padding to accommodate footer */
 }
 
 * {
@@ -18,7 +22,8 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;;
+    font-size: 16px; /* Set a base font size */
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
@@ -42,53 +47,55 @@ header {
     max-width: 100%;
 }
 
-nav {
+.container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
-nav-background {
-    background-color: #f0f0f0; /* Light gray background for the nav links */
-    padding: 10px 20px ; /* Padding around the nav links */
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.image-container {
+    flex: 1;
+    min-width: 100px; /* Prevents shrinking too much */
 }
 
-.nav-links {
+.text-container {
+    flex: 1;
+    min-width: 150px;
+    text-align: center; /* Center-align text by default */
+}
+
+
+
+.hero-section {
+    position: relative;
+    background: url('images/bunga.avif') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* Optional for parallax effect */
+    width: 100%;
+    min-height: 50vh; /* Ensures minimum height on smaller screens */
     display: flex;
-    list-style: none;
-    margin: 0; 
-    padding: 0;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #4A4A4A;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: rgb(170, 103, 131);
-}
-
-.about-hero {
-    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
-    color: white;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 100px 20px;
-    margin-bottom: 20px;
-    max-height: 300px;
-    overflow: hidden;
+    color: white;
+    padding: 2rem; /* Ensures some spacing */
+}
 
+.hero-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2; /* Content above the overlay */
 }
 
 .about-hero h1 {
@@ -129,7 +136,7 @@ nav-background {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    flex: 1 1 45%;
+    flex: 1 1 30%;
     max-width: 400px;
     display: flex;
     flex-direction: column;
@@ -183,17 +190,12 @@ nav-background {
 
 @media screen and (min-width: 768px) {
     .about-content {
-        flex-direction: row; /* Ensure items are in a row on larger screens */
+        flex-direction: row; 
     }
 
     .founders-section,
     .mission-section {
-        flex: 1 1 45%; /* Two boxes at the top */
-    }
-
-    .islamic-values {
-        flex: 1 1 100%; /* One box at the bottom */
-        margin-top: 20px; /* Add some space above the bottom box */
+        flex: 1 1 30%; 
     }
 }
 
@@ -211,18 +213,21 @@ nav-background {
 }
 
 footer {
-    background-color: var(--primary-color);
-    color: white;
-    padding:70px 5%;
-    text-align: center;
-    position: fixed;
+    background: linear-gradient(to right, #ffc0cb, #F08080); /* Gradient from pink to orange */
+    color: black; /* Keep the text color white for contrast */
+    padding: 20px 5%; /* Adjust padding as needed */
+    text-align: center; /* Center the text */
+    position: relative; /* Change to relative */
     width: 100%; 
     z-index: 100;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    height: auto; /* Allow height to adjust based on content */
+}
+
+.footer-content p {
+    margin: 0; /* Remove margin */
+    line-height: 1.2; /* Adjust line height for better spacing */
+    /* You can also set a specific font size if needed */
+    font-size: 14px; /* Adjust font size as needed */
 }
 
 .footer-content {
@@ -231,10 +236,13 @@ footer {
     white-space: normal;
     overflow: hidden; 
     text-overflow: ellipsis;
+
 }
 
 .social-links {
     margin: 5px 0;
+    color: black; 
+
 }
 
 .social-icon {
@@ -245,3 +253,21 @@ footer {
 .about-page {
     padding-bottom: 60px;
 }
+
+
+.navbar-nav .nav-item .nav-link.booking-btn {
+    background-color: #A04963; 
+    color: #FFE7E7; 
+    border: 1px solid #A04963; 
+    border-radius: 5px; 
+    padding: 5px 15px; 
+    text-align: center;
+}
+
+/* Hover Effect */
+.navbar-nav .nav-item .nav-link.booking-btn:hover {
+    background-color: #d45692; 
+    border-color: #d45692; 
+    color: #fff; 
+}
+
