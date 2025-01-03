@@ -291,3 +291,33 @@ p {
         display: none;
     }
 }
+
+/* Footer */
+footer {
+    background-color: #A04963;
+    color: white;
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-links {
+    margin: 20px 0;
+}
+
+.social-icon {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #FFD1DC; /* Light Pink on hover */
+    text-decoration: underline;
+}
