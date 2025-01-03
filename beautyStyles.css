@@ -1,6 +1,13 @@
 /* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 .hero-section {
     position: relative;
     background: url('images/bgheader.jpg') no-repeat center center;
@@ -55,11 +62,10 @@ p {
     }
 }
 
-
 .container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
@@ -79,6 +85,22 @@ p {
         text-align: left; /* Align text to the left on medium+ screens */
         margin-left: 5rem; /* Add space between image and text */
     }
+}
+/* Style the Booking button specifically */
+.navbar-nav .nav-item .nav-link.booking-btn {
+    background-color: #A04963; 
+    color: #FFE7E7; 
+    border: 1px solid #A04963; 
+    border-radius: 5px; 
+    padding: 5px 15px; 
+    text-align: center;
+}
+
+/* Hover Effect */
+.navbar-nav .nav-item .nav-link.booking-btn:hover {
+    background-color: #d45692; 
+    border-color: #d45692; 
+    color: #fff; 
 }
 
 /* Quotes Section Styles */
@@ -269,3 +291,4 @@ p {
         display: none;
     }
 }
+
