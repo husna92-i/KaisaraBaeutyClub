@@ -65,8 +65,6 @@ header {
     text-align: center; /* Center-align text by default */
 }
 
-
-
 .hero-section {
     position: relative;
     background: url('images/bunga.avif') no-repeat center center;
@@ -114,7 +112,7 @@ header {
 .about-content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -212,6 +210,10 @@ header {
     }
 }
 
+.map-section h2{
+    color:#A04963;
+}
+
 footer {
     background: linear-gradient(to right, #ffc0cb, #F08080); /* Gradient from pink to orange */
     color: black; /* Keep the text color white for contrast */
@@ -270,4 +272,5 @@ footer {
     border-color: #d45692; 
     color: #fff; 
 }
+
 
