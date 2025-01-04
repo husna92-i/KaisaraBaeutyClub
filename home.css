@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 :root {
     --primary-color: #4A4A4A;
     --secondary-color:rgb(170, 103, 131);
@@ -6,12 +7,12 @@
     --text-color: #333333;
 }
 
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -19,48 +20,26 @@ body {
     background-color: var(--background-color);
 }
 
-/* Navigation Styles */
-header {
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
+.navbar-nav .nav-item .nav-link.booking-btn {
+    background-color: #A04963; 
+    color: #FFE7E7; 
+    border: 1px solid #A04963; 
+    border-radius: 5px; 
+    padding: 5px 15px; 
+    text-align: center;
 }
+
+/* Hover Effect */
+.navbar-nav .nav-item .nav-link.booking-btn:hover {
+    background-color: #d45692; 
+    border-color: #d45692; 
+    color: #fff; 
+}
+
 
 .logo img {
     height: 50px;
     padding: 10px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    padding: 1rem 5%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: var(--secondary-color);
 }
 
 /* Hero Section */
