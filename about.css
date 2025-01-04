@@ -215,7 +215,7 @@ header {
 }
 
 footer {
-    background: linear-gradient(to right, #ffc0cb, #F08080); /* Gradient from pink to orange */
+    background:#98838d; 
     color: black; /* Keep the text color white for contrast */
     padding: 20px 5%; /* Adjust padding as needed */
     text-align: center; /* Center the text */
