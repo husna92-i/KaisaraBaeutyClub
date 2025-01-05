@@ -97,7 +97,7 @@ h1 {
 /* Service Booking Button */
 .service-booking-btn {
     display: inline-block;
-    background-color: var(--secondary-color); /* New background color */
+    background-color:#A04963; /* New background color */
     color: white; /* Text color */
     padding: 10px 20px;
     border: none;
@@ -110,7 +110,7 @@ h1 {
 
 /* Hover Effect for Service Booking Button */
 .service-booking-btn:hover {
-    background-color: var(--accent-color); /* Hover color */
+    background-color: #d45692; /* Hover color */
     transform: scale(1.05); /* Slight zoom on hover */
     color: white; /* Ensure text color stays consistent */
 }
