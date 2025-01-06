@@ -9,7 +9,7 @@
 }
 
 .about-page {
-    background-image: url('images/bg4.png');
+    background-color: #f9f7fc;
     color: var(--text-color);
     padding-bottom: 60px; 
 }
