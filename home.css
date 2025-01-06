@@ -74,7 +74,46 @@ body {
     background-color: #d45692;
     border-color: #d45692;
 }
+/* Responsive Hero */
+@media (min-width: 768px) {
+    .hero-section {
+        flex-direction: row; /* Align image and text side-by-side for larger screens */
+        text-align: left;
+    }
 
+    .hero-image {
+        flex: 1;
+        padding: 1rem;
+    }
+
+    .hero-content {
+        flex: 1;
+        padding: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem; /* Slightly larger for bigger screens */
+    }
+
+    .hero-content p {
+        font-size: 1.5rem; /* Adjust for readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5rem; /* Smaller font size for very small screens */
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
 /* Instagram Post Section */
 .elfsight-app-8fdff06d-f05b-4f65-bd90-538d66c8b982 {
     background-image: url('images/bg4.png'); /* Add your background image path */
