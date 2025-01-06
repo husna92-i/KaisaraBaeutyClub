@@ -102,6 +102,7 @@ footer {
     white-space: normal;
     overflow: hidden; 
     text-overflow: ellipsis;
+    color: black;
 }
 
 .social-links {
