@@ -42,7 +42,7 @@ body {
 /* Main Content */
 h1 {
     text-align: center;
-    background-color: var(--accent-color);
+    background-color: #A04963;
     color: white;
     padding: 20px 0;
     margin-top: 80px;
@@ -118,7 +118,7 @@ h1 {
 
 /* Footer */
 footer {
-    background:#98838d; 
+    background:#A04963; 
     color: black; /* Keep the text color white for contrast */
     padding: 20px 5%; /* Adjust padding as needed */
     text-align: center; /* Center the text */
