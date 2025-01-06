@@ -109,6 +109,12 @@ footer {
     color: black; 
 }
 
+.social-icon {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .nav-links {
