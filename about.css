@@ -97,19 +97,7 @@ header {
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
-}
-
-.about-hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.about-hero p {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: 0 auto;
-    opacity: 0.9;
+    font-size: 20px;
 }
 
 .about-content {
@@ -131,6 +119,7 @@ header {
 .mission-section,
 .vision-section {
     background-color: rgb(239, 221, 221);
+
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -146,7 +135,6 @@ header {
 
 .founders-section {
     background-color: rgb(239, 221, 221);
-
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
