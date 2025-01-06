@@ -165,7 +165,7 @@ p {
 }
 
 .slide-container{
-    max-width: 1120px;
+    max-width: 1300px;
     width: 100%;
     padding: 40px 0;
 }
@@ -178,7 +178,7 @@ p {
 }
 .card{
     border-radius: 25px;
-    background-color: #FFE2E2;
+    background-color: rgb(239, 221, 221);
     
 }
 .image-content,
@@ -215,7 +215,7 @@ p {
 }
 .overlay::after{
     border-radius: 0 25px 0 0;
-    background-color: #FFE2E2;
+    background-color: rgb(239, 221, 221);
 }
 .card-image{
     position: relative;
@@ -235,7 +235,7 @@ p {
 .name{
     font-size: 18px;
     font-weight: 500;
-    color: #A04963;
+    color: black;
 }
 .description{
     font-size: 14px;
@@ -326,6 +326,11 @@ footer {
 
 }
 
+.social-icon {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
 .social-icon {
     color: white;
     text-decoration: none;
