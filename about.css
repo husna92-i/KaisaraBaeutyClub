@@ -203,8 +203,26 @@ header {
     border-bottom: none;
 }
 
+.map-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the map section horizontally */
+    align-items: center; /* Center items vertically if needed */
+    margin: 20px 0; /* Optional: Add some vertical margin */
+}
+
+.map-section {
+    text-align: center;
+}
+
 .map-section h2 {
     color: #A04963;
+    text-align: center;
+    width: 100%;
+}
+
+#map {
+    height: 500px; /* Set the height of the map (adjust as needed) */
+    width: 40%; /* Set the width of the map to 100% of its container */
 }
 
 footer {
