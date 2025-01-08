@@ -267,7 +267,19 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
+    .hero-section {
+        background-attachment: scroll; /* Fix for mobile screens */
+    }
+
+    .top-sections {
+        flex-direction: column; /* Stack items vertically */
+        align-items: stretch; /* Make items full width */
+    }
+
+    .mission-section,
+    .vision-section {
+        flex: 1 1 100%; /* Make each section take full width */
+        max-width: 100%; /* Ensure no max width is applied */
+        margin-bottom: 20px; /* Add some space between sections */
     }
 }
